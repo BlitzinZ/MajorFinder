@@ -26,8 +26,28 @@
     <div class="max-w-4xl mx-auto px-4">
         {% block content %}{% endblock %}
     </div>
-        <footer class="text-center py-6 mt-10 border-t border-gray-300 dark:border-gray-700">
-        &copy; @2025 by Adrian Johnson | All Rights Reserved
+    <footer class="bg-white shadow-inner mt-12">
+      <div class="max-w-6xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+
+        <!-- Copyright -->
+        <p class="text-gray-700 text-sm">&copy; 2025 by Adrian Johnson | All rights reserved.</p>
+
+        <!-- Social Links -->
+        <div class="flex space-x-6">
+          <!-- GitHub -->
+          <a href="https://github.com/BlitzinZ" target="_blank" class="flex items-center text-gray-700 hover:text-gray-900 transition">
+            <img src="{{ url_for('static', filename='images/github.svg') }}" alt="GitHub" class="w-5 h-5 mr-2">
+            GitHub
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/yourusername/" target="_blank" class="flex items-center text-gray-700 hover:text-blue-600 transition">
+            <img src="{{ url_for('static', filename='images/linkedin.svg') }}" alt="LinkedIn" class="w-5 h-5 mr-2">
+            LinkedIn
+          </a>
+        </div>
+
+      </div>
     </footer>
 
 </body>
