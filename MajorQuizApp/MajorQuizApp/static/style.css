@@ -1,0 +1,84 @@
+/* Fade-in animation for questions */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* Section result bars */
+.result-bar-container {
+    background-color: #e5e7eb; /* gray-200 */
+    border-radius: 0.5rem;
+    height: 1rem;
+    overflow: hidden;
+}
+.result-bar {
+    height: 100%;
+    border-radius: 0.5rem;
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    transition: width 1s ease;
+}
+
+/* Typing effect */
+.typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid orange;
+    animation: typing 2s steps(40, end), blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+/* Confetti */
+.confetti {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0.8;
+}
+.answerBtn:focus, .answerBtn:hover {
+    outline: none;
+    transform: scale(1.05);
+}
+/* Optional custom styles */
+.result-bar-container {
+    margin-bottom: 1rem;
+}
+
+.result-bar {
+    height: 1.5rem;
+    border-radius: 0.75rem;
+}
+
+.answerBtn {
+    cursor: pointer;
+}
+
+/* style.css */
+body {
+  font-family: 'Inter', sans-serif; /* Default body text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lora', serif; /* Headings */
+}
+
+.nav-font {
+  font-family: 'Inter', sans-serif; /* or 'Lora', serif if you prefer */
+}
+
+.nav-fonta{
+    font-family: 'Lora', serif; /* or 'Lora', serif if you prefer */
+}
+
+

@@ -1,0 +1,11 @@
+[
+  {"name": "Computer Science", "categories": {"math": 5, "creative": 2, "science": 4, "indoors": 5, "helping": 1}},
+  {"name": "Mechanical Engineering", "categories": {"math": 5, "creative": 3, "science": 5, "indoors": 4, "helping": 1}},
+  {"name": "Electrical Engineering", "categories": {"math": 5, "creative": 2, "science": 5, "indoors": 4, "helping": 1}},
+  {"name": "Civil Engineering", "categories": {"math": 4, "creative": 3, "science": 4, "indoors": 3, "helping": 2}},
+  {"name": "Biology", "categories": {"math": 3, "creative": 2, "science": 5, "indoors": 3, "helping": 3}},
+  {"name": "Psychology", "categories": {"math": 2, "creative": 2, "science": 4, "indoors": 4, "helping": 5}},
+  {"name": "English Literature", "categories": {"math": 1, "creative": 5, "science": 1, "indoors": 5, "helping": 3}},
+  {"name": "Marketing", "categories": {"math": 2, "creative": 5, "science": 1, "indoors": 4, "helping": 3}},
+  {"name": "Finance", "categories": {"math": 5, "creative": 2, "science": 1, "indoors": 4, "helping": 2}}
+]

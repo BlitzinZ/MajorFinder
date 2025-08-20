@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="bg-white p-8 rounded-3xl shadow-2xl mb-12">
+    <h1 id="section-title" class="nav-font text-3xl font-bold text-center mb-6">Find Your Ideal Major</h1>
+
+    <!-- Quiz Container -->
+    <div id="quiz-container" class="mb-6">
+        <!-- Questions will be injected here by JS -->
+    </div>
+
+    <!-- Section Result Box -->
+    <div id="section-results" class="hidden bg-gradient-to-r from-blue-100 to-purple-100 p-6 rounded-3xl shadow-xl mb-6 transition-all duration-700">
+        <h2 class=" nav-fonta text-2xl font-semibold mb-4 text-center">Top Majors for this Section</h2>
+        <div id="section-results-bars" class="space-y-4">
+            <!-- Top 3 majors for section inserted here -->
+        </div>
+    </div>
+
+    <button id="next-btn" class="mt-4 w-full py-3 px-4 bg-blue-500 text-white rounded-xl shadow-lg hover:bg-blue-600 transition">Next</button>
+</div>
+
+<!-- Feedback Form -->
+<div class="bg-white p-8 rounded-3xl shadow-2xl mb-12">
+    <h2 class="nav-font text-2xl font-bold mb-4">Feedback</h2>
+    <form action="/feedback" method="POST" class="space-y-4">
+        <textarea name="positives" placeholder="What you liked" class="nav-fonta w-full p-3 border rounded-lg"></textarea>
+        <textarea name="negatives" placeholder="What could be improved" class="nav-fonta w-full p-3 border rounded-lg"></textarea>
+        <textarea name="additional_questions" placeholder="Questions you’d like to see" class="nav-fonta w-full p-3 border rounded-lg"></textarea>
+        <button type="submit" class="nav-fonta bg-blue-500 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-600 transition">Submit Feedback</button>
+    </form>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+{% endblock %}
+
+
+

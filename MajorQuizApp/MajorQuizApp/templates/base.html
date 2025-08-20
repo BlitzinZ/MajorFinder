@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Major Quiz Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg p-4 mb-8">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="/" class="nav-fonta text-xl font-bold">MajorFinder</a>
+            <div class="space-x-4">
+                <a href="/" class="nav-fonta hover:text-blue-500">Quiz</a>
+                <a href="/about" class=" nav-fonta hover:text-blue-500">About Majors</a>
+                <a href="/faqs" class="nav-fonta hover:text-blue-500">FAQs</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-4">
+        {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>
